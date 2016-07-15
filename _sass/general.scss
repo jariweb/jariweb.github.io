@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    background: $brand-color;
+    font: $base-font-size $base-font-family;
+    color: $text-color;
+}
+
+a {
+    color: $brand-color;
+}
+
+hr {
+    height: 1px;
+    margin: 2em 0;
+    background: $gray-light-color;
+    border: none;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+nav a {
+    margin-left: 1em;
+}
+
+section {
+    padding: $spacing-unit;
+
+    @media screen and (min-width: $medium-breakpoint) {
+        padding: $medium-spacing-unit;
+    }
+}
+
+h2 {
+    padding: 0 0 1em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: $base-line-height;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+main {
+    max-width: $content-width;
+    flex: 1;
+    background: $background-color;
+}
+

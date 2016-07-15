@@ -1,0 +1,36 @@
+
+.header {
+    max-width: $content-width;
+    padding: $spacing-unit $spacing-unit 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: $background-color;
+
+    @media screen and (min-width: $medium-breakpoint) {
+        padding: $medium-spacing-unit $medium-spacing-unit 0;
+    }
+
+    &__logo {
+        height: 48.3px;
+        width: 320px;
+        display: block;
+        margin-bottom: $spacing-unit;
+
+        @media screen and (max-width: 550px) {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__menu {
+        margin-bottom: $spacing-unit;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

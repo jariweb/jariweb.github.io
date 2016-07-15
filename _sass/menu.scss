@@ -1,0 +1,19 @@
+
+.menu {
+    @media screen and (max-width: 550px) {
+
+        .menu__item {
+            margin: .27em 0;
+            padding: .5em .75em;
+            display: inline-block;
+            border-radius: 3px;
+            transition: background 100ms ease-in-out;
+
+            &:hover,
+            &:focus {
+                background: #ddd;
+            }
+        }
+    }
+}
+    

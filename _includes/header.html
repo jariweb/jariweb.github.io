@@ -1,12 +1,10 @@
 
 <header class="header">
-    <a href="/">
-        <img class="logo" src="/img/logo.svg">
+    <a class="header__logo" href="/">
+        <img src="/img/logo.svg" alt="Jariweb logo">
     </a>
 
-    <nav>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/blog">Blog</a>
-        <a href="/yhteystiedot">Yhteystiedot</a>
+    <nav class="menu header__menu">
+        {% include nav.html %}
     </nav>
 </header>
