@@ -10,7 +10,7 @@ html {
 
 body {
     height: 100%;
-    padding-right: 2vw;
+    padding-right: 2%;
     background: #314454;
     font: 16px monospace;
     color: #333;
@@ -23,7 +23,7 @@ a {
 hr {
     height: 1px;
     margin: 2em 0;
-    background: #ccc;
+    background: #bcc2c7;
     border: none;
 }
 
@@ -42,6 +42,7 @@ main,
 }
 
 .logo {
+    height: 48.3px;
     width: 320px;
 }
 
@@ -75,4 +76,10 @@ p:last-child {
 
 .img {
     width: 100%;
+    position: absolute;
+}
+
+.img__wrapper {
+    position: relative;
+    background: #bcc2c7;
 }
