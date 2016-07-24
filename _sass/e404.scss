@@ -1,0 +1,21 @@
+
+.e404 {
+    padding-bottom: 63.62%;
+    overflow: hidden;
+    background: rgb(107, 112, 117) !important;
+    border-radius: 5px;
+
+    &__text {
+        max-width: 450px;
+        padding: 2em;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+        color: #fff;
+        text-shadow: 0 0 15px rgba(0, 0, 0, .5);
+
+        h3 {
+            font-weight: 400;
+        }
+    }
+}
