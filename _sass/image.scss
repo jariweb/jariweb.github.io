@@ -1,0 +1,57 @@
+
+.image {
+    &__group {
+        padding: $spacing-unit - .5em $spacing-unit - .5em 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+	    background: $background-color;
+
+        @media screen and (min-width: $medium-breakpoint) {
+            padding: 0 $medium-spacing-unit - .5em;
+        }
+
+        @media (max-width: 550px) {
+            padding: 0;
+            overflow-y: hidden;
+            display: block;
+            white-space: nowrap;
+
+            &:before,
+            &:after {
+                width: 1em;
+                content: ' ';
+                display: inline-block;
+            }
+        }
+    }
+
+    &__item {
+        padding: .5em;
+        flex-basis: 33.33%;
+
+        @media (max-width: 800px) {
+            flex-basis: 50%;
+        }
+
+        @media (max-width: 550px) {
+            width: 44%;
+            display: inline-block;
+        }
+
+        @media (max-width: 450px) {
+            width: 80%;
+        }
+
+        .img__wrapper {
+            padding-bottom: 100%;
+        }
+    }
+
+    &__description {
+        padding: 1em .5em .5em;
+        height: 4.5em;
+        overflow: hidden;
+        white-space: normal;
+    }
+}

@@ -28,9 +28,14 @@ $medium-breakpoint: 850px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        'boxes',
+        'contact',
+        'e404',
         'general',
         'footer',
+        'form',
         'header',
+        'image',
         'img',
         'menu'
 ;

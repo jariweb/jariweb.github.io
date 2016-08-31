@@ -4,7 +4,8 @@
     position: absolute;
 
     &__wrapper {
+        display: block;
         position: relative;
-        background: #bcc2c7;
+        background: $gray-light-color;
     }
 }

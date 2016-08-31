@@ -1,0 +1,28 @@
+{
+    "title": "Verkkosivut",
+
+    "description": [
+        "Nykyaikaisia ja selkeitä sivuja on vaivaton käyttää joka laitteella. Tarvittaessa yksinkertaisten hallintapaneelien avulla sivulta voidaan muokata vaikka tapahtumia tai vaihtaa yhteystietoja."
+    ],
+
+    "work": [
+        {
+            "image_url": "/img/portfolio/thumbnails/kirppi.jpg",
+            "image_alt": "Kirppi verkkokauppa kotisivut",
+            "link_to": "/img/portfolio/kirppi.jpg",
+            "description": "Kirppi verkkokauppa"
+        },
+        {
+            "image_url": "/img/portfolio/thumbnails/sirikus.jpg",
+            "image_alt": "Sirikus kotisivut, Taitaja 2016 ennakkotehtävä",
+            "link_to": "/img/portfolio/sirikus.jpg",
+            "description": "Sirikus"
+        },
+        {
+            "image_url": "/img/portfolio/thumbnails/aattamaan.jpg",
+            "image_alt": "Aattamaan Hoiva- ja Kotipalvelut Ky kotisivut",
+            "link_to": "/img/portfolio/aattamaan.jpg",
+            "description": "Aattamaan Hoiva- ja Kotipalvelut Ky, Kuopio"
+        }
+    ]
+}

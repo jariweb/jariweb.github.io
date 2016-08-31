@@ -1,0 +1,24 @@
+
+.contact {
+    a {
+        @media (min-width: 450px) {
+            color: inherit;
+            text-decoration: inherit;
+        }
+    }
+
+    &__title {
+        width: 156px;
+        display: inline-block;
+        font-weight: bold;
+
+        @media (max-width: 450px) {
+            margin-top: 1em;
+            display: block;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

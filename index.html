@@ -1,31 +1,45 @@
 ---
 layout: default
+title: 'Jari Pekkala - Kotisivujen suunnittelu ja ohjelmointipalvelut'
 ---
 
 <section>
-    <h2>Yrityksenä</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, qui pariatur. Doloremque earum qui velit natus, saepe nesciunt fugiat! Asperiores, dolores dolor temporibus accusantium. Consectetur ipsam dolores unde vitae eveniet?</p>
-    <p>Ut similique rem distinctio possimus nulla earum sapiente maxime, velit error suscipit, sint consequatur recusandae adipisci blanditiis dolorum, provident voluptatum natus ullam.</p>
+    <h2>Palvelut</h2>
+
+    <p>Tarjoan pääasiassa yrityksille <u>kotisivujen suunnittelu ja ohjelmointipalveluja</u>. Toteuttamani sivut ovat nykypäiväisiä ja helppokäyttöisiä vastaten asiakkaiden tarpeita. Ne toimivat ja näyttävät hyviltä älypuhelimilla sekä tietokoneilla.</p>
+    <p>Puuhailen myös kaikenlaista pientä, kuten korjaan puhelimia ja tietokoneita.</p>
 </section>
 
-<!-- padding-bottom: (height / width * 100) + % -->
 <div class="img__wrapper" style="padding-bottom:56.25%">
-    <img class="img" src="/img/suunnittelua.jpg">
+    <img class="img" src="/img/suunnittelua.jpg" alt="Logon suunnittelua paperille.">
 </div>
 
 <section>
-    <h2>Ihmisenä</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora eum, dolores possimus totam optio dolore magni aut eos commodi minima repudiandae quis quaerat, vel reiciendis velit, tenetur perferendis labore laborum?</p>
+    <h2>Minä, Jari Pekkala</h2>
+
+    <p>20-vuotias web-koodari Haapavedeltä, joka päivätyön ohessa haluaa tehdä muutakin kuin katsoa Game of Thronesia lauantai-iltaisin. Jokainen uusi asiakas on minulle uusi haaste; opin ymmärtämään yrityksen arvot ja tavoitteet, jonka tuloksena syntyy juuri yritystä kuvaava tuote.</p>
+
     <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex corporis, sed iure excepturi, eos enim ipsa amet quisquam perspiciatis, harum non. Illum nemo quisquam quam reprehenderit consequatur, ea ducimus doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, accusamus, eius. Adipisci optio, quasi quos, fugit quaerat modi aut? Voluptatem, natus explicabo! Magnam, nam, odit. Nesciunt at natus aspernatur dolores!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptate quas, quod adipisci, necessitatibus ex consectetur, autem, est nihil totam ut beatae quia ullam sapiente reprehenderit perferendis? Tempore, explicabo. Modi.</p>
+
+    <h2>Web Design -kisat</h2>
+    
+    <ul>
+        <li>EuroSkills 2016 Göteborg, <a target="_blank" href="http://www.skillsfinland.com/en/euroskills">EM-kisat 4.12.2016</a></li>
+        <li>Taitaja 2016 Seinäjoki, <a target="_blank" href="http://taitaja2016.fi/wp-content/uploads/2016/05/206_Verkkosivujen-tuottaminen_pv3.pdf">SM-kultaa</a></li>
+        <li>Taitaja 2015 Turku, <a target="_blank" href="http://www.taitaja2015.fi/fi/tulokset/it-ja-viestintateknologia-200/206-verkkosivujen-tuottaminen-tulokset.html">SM-pronssia</a></li>
+    </ul>
 </section>
 
 <div class="img__wrapper" style="padding-bottom:39.06%">
-    <img class="img" src="/img/desk.jpg">
+    <img class="img" src="/img/desk.jpg" alt="Kotisivujen suunnittelua paperilta tietokoneelle.">
 </div>
 
 <section>
-    <h2>Jossain siellä</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora eum, dolores possimus totam optio dolore magni aut eos commodi minima repudiandae quis quaerat, vel reiciendis velit, tenetur perferendis labore laborum?</p>
+    <div class="boxes">
+        {% for skill in site.data.home['skills'] %}
+
+            <span class="box">{{ skill }}</span>
+
+        {% endfor %}
+    </div>
 </section>

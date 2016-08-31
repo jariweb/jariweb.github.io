@@ -1,15 +1,55 @@
 ---
 layout: default
+title: "Yhteystiedot - kotisivut Haapavesi ja lähialueet"
+excerpt: "Ota yhteyttä ja katsotaan miten voin yritystänne palvella. Toimin pääasiassa Pohjois-Pohjanmaan alueella."
 ---
 
 <section>
-    <h2>Yhteystiedot</h2>
-    <p>Kirjoitan niistä näistä.</p>
-    <hr>
+    <h1>Yhteystiedot</h1>
+    
+    <p>Ota yhteyttä ja katsotaan mitä keksitään.</p>
+    <p>Asun Haapavedellä ja toimin pääasiassa <strong>Oulu - Kajaani - Kalajoki välillä</strong>, mutta nykyaikana ei ole ongelma tehdä palveluita myös kauemmaksi.</p>
+    
+    <br>
+    
+    <p class="contact">
+        <span class="contact__title">Puhelinnumero</span> <a href="tel:+358-45-697-8485" class="tel">045 697 8485</a> <br>
+        <span class="contact__title">Sähköpostiosoite</span> <a href="mailto:contact@jariweb.fi" class="email">contact@jariweb.fi</a> <br>
+    </p>
 </section>
 
 <section>
-    foo
+    <h2>Lähetä viesti</h2>
+
+    <form method="POST" action="https://formspree.io/contact@jariweb.fi">
+        <input type="hidden" name="_next" value="/kiitos">
+        <input type="hidden" name="_subject" value="Yhteydenotto jariweb.fi">
+        <input class="form__gotcha" type="text" name="_gotcha">
+
+        <div class="form__item">
+            <label for="name">Nimi *</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="form__item">
+            <label for="tel">Puhelinnumero</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+
+        <div class="form__item">
+            <label for="email">Sähköpostiosoite</label>
+            <input type="email" name="email" id="email">
+        </div>
+        
+        <div class="form__item">
+            <label for="body">Viesti *</label>
+            <textarea name="body" id="body" required></textarea>
+        </div>
+        
+        <div class="form__item form__item--right">
+            <button class="form__button" type="submit">Lähetä</button>
+        </div>
+    </form>
 </section>
 
 

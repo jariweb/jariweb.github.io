@@ -12,7 +12,8 @@ html {
 
 body {
     height: 100%;
-    padding-right: 1em;
+    padding-right: 4px;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     background: $brand-color;
@@ -22,6 +23,7 @@ body {
 
 a {
     color: $brand-color;
+    white-space: nowrap;
 }
 
 hr {
@@ -37,18 +39,26 @@ img {
     display: block;
 }
 
+figcaption {
+    text-align: center;
+    font-size: .9em;
+    color: $gray-color;
+}
+
 nav a {
     margin-left: 1em;
 }
 
 section {
     padding: $spacing-unit;
+    background: $background-color;
 
     @media screen and (min-width: $medium-breakpoint) {
         padding: $medium-spacing-unit;
     }
 }
 
+h1,
 h2 {
     padding: 0 0 1em;
 }
@@ -68,3 +78,8 @@ main {
     background: $background-color;
 }
 
+ul {
+    padding-left: 2em;
+    margin-bottom: 1em;
+    line-height: $base-line-height;
+}

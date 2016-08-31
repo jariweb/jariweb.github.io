@@ -1,15 +1,40 @@
 ---
 layout: default
+title: "Portfolio - verkkosivuja, suunnittelua ja printtiä"
+excerpt: "Suunnittelen ja toteutan nykyaikaisia verkkosivuja sekä logoja, esitteitä ja käyntikortteja yrityksen tarpeet huomioiden mm. väriteemassa ja sisällössä."
 ---
 
-<section>
-    <h2>Portfolio</h2>
-    <p>Kirjoitan niistä näistä.</p>
-    <hr>
-</section>
+{% for portfolio in site.data.portfolio %}
+{% assign section = portfolio[1] %}
 
-<section>
-    foo
-</section>
+    <section>
+        <h2>{{ section.title }}</h2>
 
+        {% for paragraph in section.description %}
+        	<p>{{ paragraph }}</p>
+        {% endfor %}
+    </section>
 
+    <div class="image__group">
+        {% for work in section.work %}
+
+            <figure class="image__item">
+                {% if work.link_to %}
+                    <a class="img__wrapper" href="{{ work.link_to }}">
+                        <img class="img image" src="{{ work.image_url }}" alt="{{ work.image_alt }}">
+                    </a>
+                {% else %}
+                    <div class="img__wrapper">
+                        <img class="img image" src="{{ work.image_url }}" alt="{{ work.image_alt }}">
+                    </div>
+                {% endif %}
+
+                <figcaption class="image__description">
+                    <p>{{ work.description }}</p>
+                </figcaption>
+            </figure>
+
+        {% endfor %}
+    </div>
+
+{% endfor %}

@@ -1,0 +1,27 @@
+{
+    "title": "Suunnittelutyö",
+
+    "description": [
+        "Suunnittelen myös mm. käyntikortteja, asiakirjoja, logoja ja esitteitä."
+    ],
+
+    "work": [
+        {
+            "image_url": "/img/portfolio/thumbnails/aattamaan_logo.jpg",
+            "image_alt": "Aattamaan Hoiva- ja Kotipalvelut Ky logo",
+            "description": "Aattamaan Hoiva- ja Kotipalvelut Ky logo"
+        },
+        {
+            "image_url": "/img/portfolio/thumbnails/jariweb_logo.jpg",
+            "image_alt": "Aattamaan Hoiva- ja Kotipalvelut Ky esite",
+            "link_to": "/img/portfolio/jariweb_logo.jpg",
+            "description": "Jariweb logo"
+        },
+        {
+            "image_url": "/img/portfolio/thumbnails/aattamaan_esite.jpg",
+            "image_alt": "Aattamaan Hoiva- ja Kotipalvelut Ky esite",
+            "link_to": "/img/portfolio/aattamaan_esite.jpg",
+            "description": "Aattamaan Hoiva- ja Kotipalvelut Ky esite"
+        }
+    ]
+}

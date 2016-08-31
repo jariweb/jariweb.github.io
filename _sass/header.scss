@@ -14,13 +14,15 @@
     }
 
     &__logo {
-        height: 48.3px;
-        width: 320px;
+        width: 318px;
+        height: 48px;
         display: block;
         margin-bottom: $spacing-unit;
+        background: transparent !important;
 
         @media screen and (max-width: 550px) {
             height: auto;
+            padding-bottom: 15.11%;
             width: 100%;
         }
     }
