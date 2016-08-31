@@ -10,5 +10,22 @@
 
         {% include footer.html %}
         <script src="/js/main.js"></script>
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Jariweb",
+            "url": "http://jariweb.fi",
+            "logo": "http://jariweb.fi/img/logo.svg"
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+358-45-697-8485",
+                "contactType": "customer service"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/jariweb/",
+            ]
+        }
+        </script>
     </body>
 </html>
