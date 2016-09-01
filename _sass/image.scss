@@ -53,5 +53,10 @@
         height: 4.5em;
         overflow: hidden;
         white-space: normal;
+
+        a {
+            text-decoration: none;
+            white-space: initial;
+        }
     }
 }
