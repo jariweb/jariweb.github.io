@@ -9,36 +9,11 @@
         </main>
 
         {% include footer.html %}
-        <script src="/js/main.js"></script>
+        
+        {% include analytics.html %}
+
         <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Jariweb",
-            "legalName": "Jariweb",
-            "url": "http://jariweb.fi",
-            "logo": "http://jariweb.fi/img/logo.svg",
-            "foundingDate": "2016-07-18",
-            "founder": {
-                "@type": "Person",
-                "name": "Jari Pekkala",
-                "nationality": "Finnish",
-                "gender": "male",
-                "birthDate": "1996-06-08"
-            },
-            "description": "Jari Pekkala, 20-vuotias Haapavedeltä, joka pitää ohjelmoinnista sekä graafisesta suunnittelusta ja toteutuksesta.",
-            "contactPoint": [{
-                "@type": "ContactPoint",
-                "contactType": "customer service",
-                "contactOption": "TollFree",
-                "telephone": "+358-45-697-8485",
-                "email": "contact@jariweb.fi",
-                "availableLanguage": ["Finnish"]
-            }],
-            "sameAs": [
-                "https://www.facebook.com/jariweb/"
-            ]
-        }
+            {% include ldjson/organization.json %}
         </script>
     </body>
 </html>
